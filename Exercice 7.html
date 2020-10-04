@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="Exercice 7-formulaire.css" />
+    <meta charset="utf-8" />
+    <title>Exercice 7 - formulaire</title>
+</head>
+
+<body>
+    <form method="POST">
+
+        <!--Votre identité-->
+        <fieldset div class="identite">
+            <legend> Votre identité</legend>
+            <ol>
+                <li>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required />
+                </li>
+
+                <li>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" required/>
+                </li>
+                <li>
+                    <label for="mail">Adresse mail :</label>
+                    <input type="email" name="mail" id="mail" placeholder="Adresse mail" required/>
+                </li>
+            </ol>
+        </fieldset></div>
+
+        <!--Adresse de livraison-->
+        <fieldset div class="livraison">
+            <legend>Adresse de livraison</legend>
+            <ol>
+                <li>
+                    <label for="adresse">Adresse :</label>
+                    <textarea rows="5" required></textarea>
+                </li>
+                <li>
+                    <label for="codepostal">Code postal :</label>
+                    <input type="text" name="codepostal" id="codepostal" placeholder="Code postal" maxlength="5" required/>
+                </li>
+                <li>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville" placeholder="Ville"required>
+                </li>
+            </ol>
+        </fieldset></div>
+
+        <!--Informations de réglement-->
+        <fieldset div class="reglement">
+            <legend>Information de réglement</legend>
+            <ol>
+                <li>Type de carte bancaire :<br>
+                            <!--Ici je n'arrive pas à faire en sorte que "required" fonctionne-->
+                    <input type="radio"name="cardtype" value="VISA"required>
+                    <label for="VISA">VISA</label><br />
+
+                    <input type="radio" name="cardtype" value="Mastercard" required>
+                    <label for="Mastercard">Mastercard</label>
+                </li>
+                <li>
+                    <label for="cardnumber">Numéro de carte :</label>
+                    <input type="text" name="carnumber" id="cardnumber" placeholder="Numéro de carte" maxlength="19" required/>
+                </li>
+                <li>
+                    <label for="securitycode">Code de sécurité :</label>
+                    <input type="password" name="securitycode" id="securitycode" placeholder="Code de sécurité"
+                        maxlength="3" required />
+                </li>
+                <li>
+                    <label for="holdername">Nom du titulaire :</label>
+                    <input type="text" name="holdername" id="holdername" placeholder="Nom du titulaire" required/>
+                </li>
+            </ol>
+        </fieldset></div>
+    
+    <!--Bouton-->
+    <input type="submit" value="J'achète !"/>
+</form>
+</body>
+
+</html>

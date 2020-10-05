@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="fr">
 
 <head>
 
-    <link rel="stylesheet" href="Exercice 7-formulaire.css" />
+    <link rel="stylesheet" href="Exercice-7-formulaire.css" />
     <meta charset="utf-8" />
     <title>Exercice 7 - formulaire</title>
 </head>
@@ -12,8 +12,9 @@
     <form method="POST">
 
         <!--Votre identité-->
-        <fieldset div class="identite">
-            <legend> Votre identité</legend>
+        <div class="identite">
+        <fieldset>
+            <legend>Votre identité</legend>
             <ol>
                 <li>
                     <label for="nom">Nom :</label>
@@ -30,10 +31,12 @@
                 </li>
             </ol>
         </fieldset>
-        </div>
+    </div>
+        
 
         <!--Adresse de livraison-->
-        <fieldset div class="livraison">
+        <div class="livraison">
+        <fieldset>
             <legend>Adresse de livraison</legend>
             <ol>
                 <li>
@@ -54,16 +57,17 @@
         </div>
 
         <!--Informations de réglement-->
-        <fieldset div class="reglement">
+        <div class="reglement">
+        <fieldset>
             <legend>Information de réglement</legend>
             <ol>
                 <li>Type de carte bancaire :<br>
-                    <!--Ici je n'arrive pas à faire en sorte que "required" fonctionne-->
+
                     <input type="radio" name="cardtype" value="VISA" required>
-                    <label for="VISA">VISA</label><br />
+                    <label for="visa">VISA</label><br />
 
                     <input type="radio" name="cardtype" value="Mastercard" required>
-                    <label for="Mastercard">Mastercard</label>
+                    <label for="mastercard">Mastercard</label>
                 </li>
                 <li>
                     <label for="cardnumber">Numéro de carte :</label>
